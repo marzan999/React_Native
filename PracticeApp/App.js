@@ -1,25 +1,18 @@
 import React from 'react';
 import {
   StyleSheet,
-  Text,
-  View,
   SafeAreaView,
-  Image,
-  TouchableOpacity,
+  Button,
 
 } from 'react-native';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      {/* <Text>Hello React Native!</Text> */}
-      <TouchableOpacity>
-        <Image
-          //blurRadius={5}
-          //fadeDuration={1000}
-          style={styles.nature}
-          source={require("./assets/2.jpg")} />
-      </TouchableOpacity>
+      <Button
+        color="orange"
+        title="Click Me"
+        onPress={() => console.log("button pressed")} />
     </SafeAreaView>
   );
 }
@@ -31,11 +24,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     //marginTop: 45,
-  },
-
-  nature: {
-    width: 250,
-    height: 350,
   },
 
 });
