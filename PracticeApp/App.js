@@ -5,6 +5,7 @@ import {
   View,
   SafeAreaView,
   Image,
+  TouchableOpacity,
 
 } from 'react-native';
 
@@ -12,11 +13,13 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       {/* <Text>Hello React Native!</Text> */}
-      <Image
-        //blurRadius={5}
-        //fadeDuration={1000}
-        style={styles.nature}
-        source={require("./assets/2.jpg")} />
+      <TouchableOpacity>
+        <Image
+          //blurRadius={5}
+          //fadeDuration={1000}
+          style={styles.nature}
+          source={require("./assets/2.jpg")} />
+      </TouchableOpacity>
     </SafeAreaView>
   );
 }
