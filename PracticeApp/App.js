@@ -34,4 +34,5 @@ const styles = StyleSheet.create({
     width: 250,
     height: 350,
   },
+
 });

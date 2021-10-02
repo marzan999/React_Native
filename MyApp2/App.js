@@ -2,6 +2,9 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import AppText from './App/assets/components/AppText';
+
+
 export default function App() {
   return (
     <View
@@ -11,16 +14,7 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <Text
-        style={{
-          fontSize: 30,
-          color: "blue",
-          fontStyle: "italic",
-          // textTransform: "capitalize",
-          // textDecorationLine: "line-through",
-
-        }}
-      >I Love React Native</Text>
+      <AppText>I Love React Native..</AppText>
     </View>
   );
 }
