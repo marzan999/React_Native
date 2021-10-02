@@ -3,6 +3,7 @@ import {
   StyleSheet,
   SafeAreaView,
   Button,
+  Alert,
 
 } from 'react-native';
 
@@ -12,7 +13,13 @@ export default function App() {
       <Button
         color="orange"
         title="Click Me"
-        onPress={() => alert("button pressed")} />
+        onPress={() =>
+          Alert.alert("Messege", "Messege received?",
+            [
+              { text: "Yes", onPress: () => console.log("Yes, messege received") },
+              { text: "No", onPress: () => console.log("No, messege not received") }
+            ]
+          )} />
     </SafeAreaView>
   );
 }
