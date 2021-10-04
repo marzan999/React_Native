@@ -2,18 +2,21 @@ import React from 'react';
 import {
   StyleSheet,
   SafeAreaView,
-  Button,
-  Platform,
   StatusBar,
+  View,
 
 } from 'react-native';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container} >
-      <Button
-        title="Click Me"
-        onPress={() => console.log("button tapped")} />
+      <View
+        style={{
+          backgroundColor: "orange",
+          width: "50%",
+          height: 100,
+        }}
+      />
     </ SafeAreaView>
   );
 }
@@ -23,8 +26,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : null,
-    // marginTop: 45,
+    justifyContent: "center",
+    alignItems: "center",
   },
 
 });
