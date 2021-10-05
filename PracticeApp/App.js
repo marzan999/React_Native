@@ -12,19 +12,37 @@ import {
 
 export default function App() {
 
-  console.log(Dimensions.get("screen"));
   return (
     <SafeAreaView style={styles.container} >
+
       <View style={{
         backgroundColor: "orange",
-        width: "50%",
-        height: 70,
-      }}>
+        //flexBasis: 100,
+        //flexGrow: 1,
+        width: 400,
+        flexShrink: 1,
+        height: 100,
+      }} />
 
-      </View>
-    </ SafeAreaView>
+
+      <View style={{
+        backgroundColor: "green",
+        width: 100,
+        height: 100,
+      }} />
+
+      <View style={{
+        backgroundColor: "black",
+        width: 100,
+        height: 100,
+      }} />
+
+
+    </ SafeAreaView >
   );
 }
+
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -33,6 +51,7 @@ const styles = StyleSheet.create({
     // marginTop: 45,
     justifyContent: "center",
     alignItems: "center",
+    flexDirection: "row",
   },
 
 });
