@@ -16,8 +16,9 @@ function WelcomeScreen(props) {
 
             <View style={styles.size}>
                 <Image style={styles.logo} source={require("../assets/favicon.png")} />
-                <Text>Hello React Native</Text>
+                <Text style={styles.text}>Hello React Native</Text>
             </View>
+
             <View style={styles.loginButton}></View>
             <View style={styles.registerButton}></View>
 
@@ -47,12 +48,17 @@ const styles = StyleSheet.create({
     logo: {
         width: 100,
         height: 100,
-        alignItems: "center",
+        alignSelf: "center",
     },
 
     size: {
         position: "absolute",
         top: 300,
+    },
+
+    text: {
+        fontSize: 40,
+        color: "white",
     }
 })
 
