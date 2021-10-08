@@ -1,32 +1,50 @@
 import React from 'react';
 import {
   View,
+  Text,
 } from 'react-native';
-
 
 export default function App() {
 
   return (
+
     <View
       style={{
         flex: 1,
         justifyContent: "center",
-        alignItems: "center",
+        alignItems: "center"
       }}
     >
-
       <View
         style={{
-          backgroundColor: "red",
-          width: 200,
-          height: 200,
-          borderWidth: 20,
-          borderColor: "green",
-          borderRadius: 110,
+          height: 300,
+          width: 430,
+          backgroundColor: "green",
+          justifyContent: "center",
+          alignItems: "center",
         }}
-      ></View>
+      >
+
+        <View
+          style={{
+            backgroundColor: "red",
+            width: 200,
+            height: 200,
+            borderRadius: 110,
+          }}
+        >
+
+        </View>
+
+      </View>
+      <Text
+        style={{
+          fontSize: 30,
+        }}
+      >BANGLADESH</Text>
 
     </View>
+
   );
 }
 
