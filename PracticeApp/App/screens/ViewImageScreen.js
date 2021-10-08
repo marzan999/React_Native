@@ -8,6 +8,8 @@ import {
 function ViewImageScreen(props) {
     return (
         <View style={styles.container}>
+            <View style={styles.closeIcon}></View>
+            <View style={styles.deleteIcon}></View>
             <Image
                 resizeMode="contain"
                 style={styles.image}
@@ -18,6 +20,24 @@ function ViewImageScreen(props) {
 }
 
 const styles = StyleSheet.create({
+
+    closeIcon: {
+        width: 70,
+        height: 50,
+        backgroundColor: "gold",
+        position: "absolute",
+        top: 50,
+        left: 40,
+    },
+
+    deleteIcon: {
+        width: 70,
+        height: 50,
+        backgroundColor: "red",
+        position: "absolute",
+        top: 50,
+        right: 40,
+    },
 
     container: {
         backgroundColor: "#000",
