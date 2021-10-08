@@ -20,12 +20,20 @@ export default function App() {
           backgroundColor: "orange",
           width: 150,
           height: 150,
-          //shadowColor: "#000",
-          //shadowOpacity: 1,
-          elevation: 50,
+          padding: 25,
         }}
       >
+        <View
+          style={{
+            backgroundColor: "blue",
+            height: 100,
+            width: 100,
+          }}
+        >
+        </View>
       </View>
+
+
 
     </View >
   );
