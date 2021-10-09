@@ -20,6 +20,10 @@ export default function App() {
           //fontFamily: "Roboto",
           fontSize: 40,
           fontStyle: "italic",
+          fontWeight: "bold",
+          color: "#006400",
+          textTransform: "capitalize",
+          textDecorationLine: "line-through",
         }}
       >
         I love React Native
