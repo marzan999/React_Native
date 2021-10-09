@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   View,
+  Text,
 } from 'react-native';
 
 
@@ -14,28 +15,15 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <View
-
+      <Text
         style={{
-          backgroundColor: "orange",
-          width: 150,
-          height: 150,
-          padding: 25,
+          //fontFamily: "Roboto",
+          fontSize: 40,
+          fontStyle: "italic",
         }}
       >
-        <View
-          style={{
-            backgroundColor: "blue",
-            height: 100,
-            width: 100,
-          }}
-        >
-        </View>
-      </View>
-
-
-
+        I love React Native
+      </Text>
     </View >
   );
 }
-
