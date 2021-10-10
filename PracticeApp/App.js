@@ -2,9 +2,11 @@ import React from 'react';
 import {
   View,
   Text,
+  AppState,
 } from 'react-native';
 
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import AppText from './App/components/AppText';
 
 export default function App() {
 
@@ -21,6 +23,7 @@ export default function App() {
         size={150}
         color="#000"
       />
+      <AppText>Email Box</AppText>
     </View>
   );
 }
