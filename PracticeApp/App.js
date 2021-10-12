@@ -5,7 +5,7 @@ import {
   AppState,
 } from 'react-native';
 
-import AppText from './App/components/AppText/AppText';
+import AppButton from './App/components/AppButton';
 
 export default function App() {
 
@@ -18,7 +18,7 @@ export default function App() {
       }}
     >
 
-      <AppText>I love React Native</AppText>
+      <AppButton title="Login" />
     </View>
   );
 }
