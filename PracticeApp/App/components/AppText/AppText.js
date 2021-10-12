@@ -3,6 +3,7 @@ import React from 'react';
 import {
     Text,
     StyleSheet,
+    Platform,
 } from 'react-native'
 
 function AppText({ children }) {
@@ -13,9 +14,8 @@ function AppText({ children }) {
 
 const styles = StyleSheet.create({
     text: {
-        color: "orange",
-        fontSize: 20,
-        fontFamily: "Avenir"
+        fontSize: 18,
+        fontFamily: Platform.OS === "android" ? "Robato" : "Avenir"
     }
 })
 
