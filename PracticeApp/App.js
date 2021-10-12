@@ -3,6 +3,7 @@ import {
   View,
   Text,
   AppState,
+  LogBox,
 } from 'react-native';
 
 import AppButton from './App/components/AppButton';
@@ -18,7 +19,7 @@ export default function App() {
       }}
     >
 
-      <AppButton title="Login" />
+      <AppButton title="Login" onPress={() => console.log("tapped..")} />
     </View>
   );
 }
