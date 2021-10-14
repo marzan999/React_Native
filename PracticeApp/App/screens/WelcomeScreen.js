@@ -5,6 +5,7 @@ import {
     View,
     Image,
     Text,
+    buttonsContainer,
 } from 'react-native';
 import AppButton from '../components/AppButton';
 
@@ -13,16 +14,19 @@ function WelcomeScreen(props) {
         <ImageBackground
 
             style={styles.background}
-            source={require("../assets/6.jpg")}>
+            source={require("../assets/33.jpg")}>
 
             <View style={styles.size}>
                 <Image style={styles.logo} source={require("../assets/favicon.png")} />
                 <Text style={styles.text}>Hello React Native</Text>
             </View>
 
-            <AppButton title="Login" />
+            <View style={styles.buttonsContainer}>
+                <AppButton title="Login" />
+                <AppButton title="Register" color="secondary" />
 
-            <View style={styles.registerButton}></View>
+            </View>
+
 
         </ImageBackground>
     );
@@ -34,13 +38,12 @@ const styles = StyleSheet.create({
         justifyContent: "flex-end",
         alignItems: "center",
     },
-
-
-    registerButton: {
+    buttonsContainer: {
+        padding: 20,
         width: "100%",
-        height: 70,
-        backgroundColor: "orange",
+        alignItems: 'center'
     },
+
 
     logo: {
         width: 100,
@@ -50,7 +53,7 @@ const styles = StyleSheet.create({
 
     size: {
         position: "absolute",
-        top: 300,
+        top: 370,
     },
 
     text: {
