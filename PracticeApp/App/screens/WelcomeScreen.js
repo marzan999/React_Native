@@ -17,8 +17,10 @@ function WelcomeScreen(props) {
             source={require("../assets/33.jpg")}>
 
             <View style={styles.size}>
-                <Image style={styles.logo} source={require("../assets/favicon.png")} />
-                <Text style={styles.text}>Hello React Native</Text>
+                {/* <Image style={styles.logo} source={require("../assets/favicon.png")} /> */}
+                <Text style={styles.text}>  Welcome to </Text>
+                <Text style={styles.bText}>ভূতের বাড়ি</Text>
+                <Text style={styles.emoji}>  🧛‍♂️👻🧛‍♂️</Text>
             </View>
 
             <View style={styles.buttonsContainer}>
@@ -44,6 +46,14 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
 
+    bText: {
+        fontSize: 55,
+        color: "gold",
+    },
+
+    emoji: {
+        fontSize: 55,
+    },
 
     logo: {
         width: 100,
@@ -53,7 +63,7 @@ const styles = StyleSheet.create({
 
     size: {
         position: "absolute",
-        top: 370,
+        top: 440,
     },
 
     text: {
