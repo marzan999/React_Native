@@ -1,15 +1,25 @@
 import React from 'react';
 import {
   View,
-  Text,
-  AppState,
-  LogBox,
 } from 'react-native';
 
-import AppButton from './App/components/AppButton';
-import WelcomeScreen from './App/screens/WelcomeScreen';
+import Card from "./App/components/Card";
 
 export default function App() {
 
-  return <WelcomeScreen />;
+  return (
+    <View
+      style={{
+        backgroundColor: "#f8f4f4",
+        padding: 20,
+        paddingTop: 100,
+      }}
+    >
+      <Card
+        title="Sitting for sale"
+        subTitle="100\-"
+        image={require("./App/assets/1234.jpeg")}
+      />
+    </View>
+  );
 }

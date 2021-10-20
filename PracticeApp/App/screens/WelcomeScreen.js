@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
 
     size: {
         position: "absolute",
-        top: 440,
+        top: 380,
     },
 
     text: {
