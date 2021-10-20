@@ -1,10 +1,15 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 
-export default function AppText() {
+export default function AppText({ title, customStyle }) {
     return (
-        <View>
-            <Text>Hello</Text>
-        </View>
+        <>
+            <Text style={[styles.textT, customStyle]}>{title}</Text>
+        </>
     )
 }
+const styles = StyleSheet.create({
+    textT: {
+        fontSize: 20,
+    }
+})
