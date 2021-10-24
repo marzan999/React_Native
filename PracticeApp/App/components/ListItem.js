@@ -3,7 +3,7 @@ import { Image, Text, View } from 'react-native';
 
 function ListItem(props) {
     return (
-        <View style={{ margin: 10, flexDirection: 'row', backgroundColor: "#556B2F" }}>
+        <View style={{ margin: 10, flexDirection: 'row', backgroundColor: "#556B2F", borderRadius: 50 }}>
             <View style={{ height: 100, width: 100, borderRadius: 50 }}>
                 <Image source={props.image} style={{ height: 100, width: 100, overflow: 'hidden', borderRadius: 50, }} />
             </View>
