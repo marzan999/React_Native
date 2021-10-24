@@ -21,6 +21,7 @@ const messages = [
 function MessagesScreen(props) {
     return (
         <FlatList
+            style={{ paddingTop: 40 }}
             data={messages}
             keyExtractor={message => message.id.toString()}
             renderItem={({ item }) =>
