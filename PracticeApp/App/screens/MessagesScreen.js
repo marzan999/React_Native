@@ -21,7 +21,7 @@ const messages = [
 function MessagesScreen(props) {
     return (
         <FlatList
-            style={{ paddingTop: 40, }}
+            style={{ paddingTop: 40, backgroundColor: "#A9A9A9" }}
             data={messages}
             keyExtractor={message => message.id.toString()}
             renderItem={({ item }) =>
