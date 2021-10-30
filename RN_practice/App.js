@@ -7,7 +7,7 @@ import StartGameScreen from './screens/StartGameScreen';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Header title="Hello React Native" />
+      <Header title="Guess a number" />
       <StartGameScreen />
     </View>
   );
