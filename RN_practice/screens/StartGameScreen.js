@@ -15,8 +15,8 @@ import Colors from '../constants/Colors';
 const StartGameScreen = props => {
 
     const [enteredValue, setEnteredValue] = useState('');
-
     const numberInputHandler = inputText => {
+        console.log(inputText);
         setEnteredValue(inputText.replace(/[^0-9]/g, ''));
     };
 
@@ -36,7 +36,7 @@ const StartGameScreen = props => {
                         keyboardType="number-pad"
                         //keyboardType="email-address"
                         maxLength={2}
-                        onChangedText={numberInputHandler}
+                        onChangeText={text => numberInputHandler(text)}
                         value={enteredValue}
                     />
                     <View style={styles.buttonContainer}>
