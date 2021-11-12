@@ -39,6 +39,7 @@ const StartGameScreen = props => {
         setConfirmed(true);
         setSelectedNmumber(chosenNumber);
         setEnteredValue('');
+        Keyboard.dismiss();
     };
 
     let confirmedOutput;
@@ -128,6 +129,7 @@ const styles = StyleSheet.create({
 
     summeryContainer: {
         marginTop: 20,
+        alignItems: "center",
     }
 });
 
